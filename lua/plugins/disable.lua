@@ -5,6 +5,13 @@ return {
     opts = {
       scroll = { enabled = false },
       picker = {
+        layout = {
+          preset = "default",
+          layout = {
+            width = 0,
+            height = 0,
+          },
+        },
         sources = {
           explorer = {
             hidden = true,
