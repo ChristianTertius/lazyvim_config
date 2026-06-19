@@ -3,12 +3,12 @@ return {
   name = "kanagawa",
   config = function()
     require("kanagawa").setup({
-      transparent = true, -- background transparent
+      transparent = true,
       colors = {
         theme = {
           all = {
             ui = {
-              bg_gutter = "none", -- gutter juga transparent
+              bg_gutter = "none",
             },
           },
         },
