@@ -15,6 +15,7 @@ vim.api.nvim_create_autocmd("TextYankPost", {
   end,
 })
 
+-- delete ^m when paste from windows to wsl
 vim.api.nvim_create_autocmd({ "BufReadPost", "BufWritePre" }, {
   pattern = "*",
   callback = function()
@@ -27,3 +28,10 @@ vim.api.nvim_create_autocmd({ "BufReadPost", "BufWritePre" }, {
     vim.cmd("%s/\r//ge")
   end,
 })
+
+vim.api.nvim_set_hl(0, "SnacksPickerBox", { bg = "NONE" })
+vim.api.nvim_set_hl(0, "SnacksPickerBorder", { bg = "NONE" })
+vim.api.nvim_set_hl(0, "SnacksPickerTitle", { bg = "NONE" })
+vim.api.nvim_set_hl(0, "SnacksPickerFooter", { bg = "NONE" })
+vim.api.nvim_set_hl(0, "NormalFloat", { bg = "NONE" })
+vim.api.nvim_set_hl(0, "FloatBorder", { bg = "NONE" })
